@@ -1,0 +1,39 @@
+import java.util.Scanner;
+//import java.util.
+
+public class Main
+{
+    static String name;
+    static int age;
+	public static void main(String[] args) {
+	    
+		System.out.println("Welcome to Morttle's Lands, please, choose your hero:");
+	}
+	
+	// HEROES ===
+	public static void Baltazar(){
+	    name = "Baltazar";
+	    age = 25;
+	    religion = "none";
+	}
+	public static void Terizla(){
+	    
+	}
+	public static void Bronx(){
+	    
+	}
+	
+	// CREATURES ===
+	public static void Zombie(){
+	    
+	}
+	
+	public static void Horse(){
+	    
+	}
+	
+	// DAMAGE'S TYPES ===
+	public static void Fire(){
+	    
+	}
+}
