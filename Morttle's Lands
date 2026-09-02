@@ -3,79 +3,150 @@ import java.util.Scanner;
 
 public class Main
 {
+    static int age, basic_damage, skill_damage, energy, fury, hp, speed_attack, max_energy;
+    static Scanner sc = new Scanner(System.in);
     static String name, type, description;
-    static int age, basic_damage, skill_damage, energy, fury, hp, speed_attack;
-	public static void main(String[] args) {
-	    
-		System.out.println("Welcome to Morttle's Lands, please, choose your hero:");
-		
+    
+    //========= ========= ========= ========= ========== ========= 
+    // FUNÇÕES ANEXAS ===
+    
+    // CONTROLS ===
+	public static void show_data_heroes(){
+	    System.out.printf("\n\nHero: " + name + ".\n");
+	    System.out.println("Age: " + age + ".");
+	    System.out.println("Type of damage: " + type + ".");
+	    System.out.println("Damage of Basic attack: " + basic_damage + ".");
+	    System.out.println("Damage of Skill: " + skill_damage + ".");
+	    System.out.println("Cost of energy: " + energy + ".");
+	    System.out.println("Maximum energy amount: " + max_energy + ".");
+	    System.out.println("Gain of fury: " + fury + ".");
+	    System.out.println("Maximum of life amount: " + hp + " points.");
+	    System.out.println("Speed of attacks: " + speed_attack + ".");
+	    System.out.println("Description: " + description + ".");
 	}
+	
+	//========= ========= ========= ========= ========== ========= 
 	
 	// HEROES ===
 	public static void Baltazar_data(){
 	    name = "Baltazar";
 	    age = 25;
 	    type = "decain";
-	    basic_damage = "23";
-	    skill_damage = "";
-	    energy = "";
-	    fury = "";
-	    hp = "200";
-	    speed_attack = "60";
+	    basic_damage = 23;
+	    skill_damage = 54;
+	    energy = 23;
+	    max_energy = 203;
+	    fury = 34;
+	    hp = 200;
+	    speed_attack = 60;
 	    description = "He's looking for a girl wearing a purple dressing.";
 	}
 	public static void Terizla_data(){
 	    name = "Terizla";
 	    age = 27;
 	    type = "fire";
-	    basic_damage = "17";
-	    skill_damage = "60";
-	    energy = "";
-	    fury = "";
-	    hp = "260";
-	    speed_attack = "40";
+	    basic_damage = 17;
+	    skill_damage = 60;
+	    energy = 17;
+	    max_energy = 156;
+	    fury = 10;
+	    hp = 260;
+	    speed_attack = 40;
 	    description = "He keeps a girl in his wardrobe.";
 	}
 	public static void Bronx_data(){
 	    name = "Bronx";
 	    age = 22;
 	    type = "water";
-	    basic_damage = "";
-	    skill_damage = "";
-	    energy = "";
-	    fury = "";
-	    hp = "";
-	    speed_attack = "";
+	    basic_damage = 12;
+	    skill_damage = 83;
+	    energy = 12;
+	    max_energy = 130;
+	    fury = 26;
+	    hp = 190;
+	    speed_attack = 68;
 	    description = "She's stuck in a wardrobe and wears a purple dressing.";
 	}
+	
+	//========= ========= ========= ========= ========== ========= 
 	
 	// CREATURES ===
 	public static void Zombie_data(){
 	    name = "Zombie";
 	    type = "decain";
-	    description = "It was a father, a good son, but now it's only a dead-living creature.";
+	    basic_damage = 9;
+	    hp = 120;
+	    description = "It was a father, a good son. But now it's only a dead-living creature.";
 	}
 	
 	public static void Horse_data(){
 	    
 	}
 	
+	//========= ========= ========= ========= ========== ========= 
+	
 	// DAMAGE'S TYPES ===
 	public static void Fire_data(){
 	    
 	}
 	
+	//========= ========= ========= ========= ========== ========= 
+	
 	// ITEMS ===
-	public static void helmet_data(){
-	    hp
-	    description
-	    energy
+	public static void Helmet_data(){
+	    hp += 45;
+	    energy -= 7;
+	    fury += 12;
+	    description = "It hurts a little, but keeps your head safe.";
 	}
 	
-	public static void sword_data(){
-	    speed_attack -= "12";
-	    basic_damage += "18";
+	public static void Sword_data(){
+	    speed_attack -= 12;
+	    basic_damage += 18;
 	    type = "physical";
-	    description = "Increases speed attack, basic damage and change your damage type to physical."
+	    description = "Increases speed attack, basic damage and change your damage type to physical.";
 	}
+	
+    //========= ========= ========= ========= ========== ========= 
+    // FUNÇÃO PRINCIPAL ===
+	public static void main(String[] args) {
+	    int option = 0;
+	    boolean loop = true;
+		System.out.print("Welcome to Morttle's Lands, please, ");
+		
+		while(loop = true) {
+		System.out.printf("choose your hero: \n'1' - Baltazar \n'2' - Terizla \n'3' - Bronx \n\n - - -> ");
+		option = sc.nextInt();
+		
+		switch (option) {
+		    case 1:
+		        Baltazar_data();
+		        show_data_heroes();
+		        loop = false;
+		        break;
+		        
+		        case 2:
+		            Terizla_data();
+		            show_data_heroes();
+		            loop = false;
+		            break;
+		        
+		            case 3:
+		               Bronx_data();
+		               show_data_heroes();
+		               loop = false;
+		               break;
+		        
+		                default:
+		                System.out.println("Algo deu errado, tente novamente.");
+		                loop = true;
+		}
+		} 
+		
+		System.out.println("Finishing code...");
+	}
+	
+	//========= ========= ========= ========= ========== ========= 
+	
+	
 }
