@@ -3,37 +3,45 @@ import java.util.Scanner;
 
 public class Main
 {
-    static String name;
+    static String name, type, description;
     static int age;
 	public static void main(String[] args) {
 	    
 		System.out.println("Welcome to Morttle's Lands, please, choose your hero:");
+		
 	}
 	
 	// HEROES ===
-	public static void Baltazar(){
+	public static void Baltazar_data(){
 	    name = "Baltazar";
 	    age = 25;
-	    religion = "none";
+	    type = "decain";
+	    description = "He looks for a girl wearing a purple dress.";
 	}
-	public static void Terizla(){
-	    
+	public static void Terizla_data(){
+	    name = "Terizla";
+	    age = 27;
+	    type = "poison";
+	    description = "He keeps a girl in his wardrobe.";
 	}
-	public static void Bronx(){
-	    
+	public static void Bronx_data(){
+	    name = "Bronx";
+	    age = 22;
+	    type = "decain";
+	    description = "She's  wearing a purple dress.";
 	}
 	
 	// CREATURES ===
-	public static void Zombie(){
+	public static void Zombie_data(){
 	    
 	}
 	
-	public static void Horse(){
+	public static void Horse_data(){
 	    
 	}
 	
 	// DAMAGE'S TYPES ===
-	public static void Fire(){
+	public static void Fire_data(){
 	    
 	}
 }
