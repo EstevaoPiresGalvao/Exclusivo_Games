@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Main
 {
     static String name, type, description;
-    static int age;
+    static int age, basic_damage, skill_damage, energy, fury, hp, speed_attack;
 	public static void main(String[] args) {
 	    
 		System.out.println("Welcome to Morttle's Lands, please, choose your hero:");
@@ -16,24 +16,44 @@ public class Main
 	    name = "Baltazar";
 	    age = 25;
 	    type = "decain";
-	    description = "He looks for a girl wearing a purple dress.";
+	    basic_damage = "23";
+	    skill_damage = "";
+	    energy = "";
+	    fury = "";
+	    hp = "200";
+	    speed_attack = "60";
+	    description = "He's looking for a girl wearing a purple dressing.";
 	}
 	public static void Terizla_data(){
 	    name = "Terizla";
 	    age = 27;
-	    type = "poison";
+	    type = "fire";
+	    basic_damage = "17";
+	    skill_damage = "60";
+	    energy = "";
+	    fury = "";
+	    hp = "260";
+	    speed_attack = "40";
 	    description = "He keeps a girl in his wardrobe.";
 	}
 	public static void Bronx_data(){
 	    name = "Bronx";
 	    age = 22;
-	    type = "decain";
-	    description = "She's  wearing a purple dress.";
+	    type = "water";
+	    basic_damage = "";
+	    skill_damage = "";
+	    energy = "";
+	    fury = "";
+	    hp = "";
+	    speed_attack = "";
+	    description = "She's stuck in a wardrobe and wears a purple dressing.";
 	}
 	
 	// CREATURES ===
 	public static void Zombie_data(){
-	    
+	    name = "Zombie";
+	    type = "decain";
+	    description = "It was a father, a good son, but now it's only a dead-living creature.";
 	}
 	
 	public static void Horse_data(){
@@ -43,5 +63,19 @@ public class Main
 	// DAMAGE'S TYPES ===
 	public static void Fire_data(){
 	    
+	}
+	
+	// ITEMS ===
+	public static void helmet_data(){
+	    hp
+	    description
+	    energy
+	}
+	
+	public static void sword_data(){
+	    speed_attack -= "12";
+	    basic_damage += "18";
+	    type = "physical";
+	    description = "Increases speed attack, basic damage and change your damage type to physical."
 	}
 }
