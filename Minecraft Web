@@ -6,33 +6,73 @@
     <head>
         <meta charset ="UTF-8">
         <meta name="viewport" content="width=device-width, initial scale: 1.0">
-        <title> Jogo em html </title>
+        <title> Minecraft Web </title>
         
         
         <style> 
             body{
-                background-color: #27D6F5;
+                background-color: #C8F527;
             }
-            .espaco{
-                background-color: #2121C2;
-                width: 100%;
-                height: 400px;
-            }
-            .ceu{
-            }
-            .solo{
-                background-color: #6E4319;
-            }
-            .subsolo{
-                background-color: #2B2A29;
-            }
-            
             .rotulo{
+                margin: 4px;
                 font-size: 300%;
-                color: White;
+                color: black;
                 text-align: center;
             }
         
+        
+            .espaco{
+                background-color: #2121C2;
+                width: 100%;
+                height: 150px;
+            }
+            .star{
+                
+                width: 10px;
+                height: 150px;
+            }
+            
+            
+            .ceu{
+                background-color: #27D6F5;
+                width: 100%;
+                height: 350px;
+            }
+            .bird{
+            
+            }
+            
+            
+            .grama{
+                background-color: #2F8528;
+                width: 100%;
+                height: 30px;
+            }
+            .stone{
+            
+            }
+            
+            
+            .solo{
+                background-color: #6E4319;
+                width: 100%;
+                height: 105px;
+            }
+            .root{
+            
+            }
+            
+            
+            .subsolo{
+                background-color: #2B2A29;
+                width: 100%;
+                height: 200px;
+            }
+            .coatOre{
+            
+            }
+            
+            
         </style>
         
     </head>
@@ -40,12 +80,17 @@
     
     
     <body>
+        <h1 class="rotulo">- Minecraft Web -</h1>
         
             <div class="espaco">
-                <h1 class="rotulo">- Minecraft Web -</h1>
+                
             </div>
             
             <div class="ceu">
+                
+            </div>
+            
+            <div class="grama">
                 
             </div>
             
