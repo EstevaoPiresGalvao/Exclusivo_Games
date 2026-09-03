@@ -31,7 +31,7 @@ public class Main
 	public static void Baltazar_data(){
 	    name = "Baltazar";
 	    age = 25;
-	    type = "decain";
+	    type = "decay";
 	    basic_damage = 23;
 	    skill_damage = 54;
 	    energy = 23;
@@ -73,7 +73,7 @@ public class Main
 	// CREATURES ===
 	public static void Zombie_data(){
 	    name = "Zombie";
-	    type = "decain";
+	    type = "decay";
 	    basic_damage = 9;
 	    hp = 120;
 	    description = "It was a father, a good son. But now it's only a dead-living creature.";
